@@ -7,9 +7,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.sena.project_1.ui.theme.Project_1Theme
-import com.sena.project_1.view.ActivityOne
-import com.sena.project_1.view.ActivityThree
-import com.sena.project_1.view.ActivityTwo
+import com.sena.project_1.view.ActividadUno
+import com.sena.project_1.view.ActividadDos
+import com.sena.project_1.view.ActividadUno
+import com.sena.project_1.view.ActividadTres
 
 
 class MainActivity : ComponentActivity() {
@@ -18,7 +19,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Project_1Theme {
-                ActivityOne()
+                ActividadUno()
             }
         }
     }
@@ -29,22 +30,22 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun GreetingPreview() {
     Project_1Theme {
-        ActivityOne()
+        ActividadUno()
     }
 }
 
 @Preview(showSystemUi = true, showBackground = true)
 @Composable
-fun Dos() {
+fun PreviewDos() {
     Project_1Theme {
-        ActivityTwo()
+        ActividadDos()
     }
 }
 
 @Preview(showSystemUi = true, showBackground = true)
 @Composable
-fun Tres() {
+fun PreviewTres() {
     Project_1Theme {
-        ActivityThree()
+        ActividadTres()
     }
 }
